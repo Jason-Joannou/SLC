@@ -1,0 +1,24 @@
+{
+  "name": "expressapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "nodemon --watch ./api/**/*.ts --exec npx tsx ./api/index.ts",
+    "serve": "nodemon dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
